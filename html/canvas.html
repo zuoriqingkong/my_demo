@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+</head>
+<body>
+<div>
+    <canvas id="canvas" width="600" height="400">
+
+    </canvas>
+</div>
+</body>
+<script>
+    var ctx = document.getElementById('canvas').getContext('2d');
+    /*ctx.fillRect(0,0,100,100);
+    ctx.strokeRect(0,120,100,100);
+    ctx.fillStyle = 'pink';
+    ctx.strokeStyle = 'blue'
+    ctx.fillRect(120,0,100,100)
+    ctx.strokeRect(120,120,100,100)
+
+    ctx.beginPath();
+    ctx.arc(250,250,50,0,Math.PI*2)
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(225,0,250,.5)'
+    ctx.fill()
+
+    ctx.beginPath();
+    ctx.arc(300,100,50,0,Math.PI,true);
+    ctx.closePath();
+    ctx.strokeStyle = 'red'
+    ctx.stroke()
+
+    ctx.beginPath();
+    ctx.arc(300,150,50,0,Math.PI,true);
+    ctx.strokeStyle = 'green'
+    ctx.closePath();
+    ctx.stroke()
+
+    ctx.strokeStyle='dark'
+    ctx.moveTo(250,100)
+    ctx.lineTo(350,150)
+    ctx.stroke()*/
+
+    // 绘制六边形
+    /*var n = 0;
+    var dx = 150;
+    var dy = 150;
+    var s = 100;
+    ctx.beginPath();
+    ctx.fillStyle = 'pink';
+    ctx.strokeStyle = 'rgba(0,0,100,.5)';
+    var x = Math.sin(0);
+    var y = Math.cos(0);
+    var dig = Math.PI/15 * 7
+    for (let i = 0; i < 30; i++) {
+        var x= Math.sin(i*dig)
+        var y= Math.cos(i*dig)
+        ctx.lineTo(dx+x*s, dy+y*s)
+    }
+    ctx.closePath()
+    ctx.fill()
+    ctx.stroke()*/
+
+    // 线性渐变
+    var g1 = ctx.createLinearGradient(0 ,0 ,0 , 300);
+    g1.addColorStop(0, '#e55d87')
+    g1.addColorStop(1, '#5fc3e4')
+    ctx.fillStyle = g1;
+    ctx.fillRect(0, 0, 400, 300)
+    (function () {
+
+    })()
+</script>
+</html>
