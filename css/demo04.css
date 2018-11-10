@@ -1,0 +1,11 @@
+.content {
+  width: 80%;
+  margin: 100px auto 0;
+}
+.content a {
+  display: inline-block;
+  background: #234fff;
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=demo04.css.map */
